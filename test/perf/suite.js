@@ -34,7 +34,7 @@ var bufferpack = require('../..'),
     bufferpack.pack(simpleFormat, simple);
 })
 .on('cycle', cycleCallback)
-.on('complete', completeCallback)
+//.on('complete', completeCallback)
 .run();
 
 // Simple Unpack
@@ -43,7 +43,7 @@ var bufferpack = require('../..'),
     bufferpack.unpack(simpleFormat, simplePacked);
 })
 .on('cycle', cycleCallback)
-.on('complete', completeCallback)
+//.on('complete', completeCallback)
 .run();
 
 // Complex Pack
@@ -52,7 +52,7 @@ var bufferpack = require('../..'),
     bufferpack.pack(complexFormat, complex);
 })
 .on('cycle', cycleCallback)
-.on('complete', completeCallback)
+//.on('complete', completeCallback)
 .run();
 
 // Complex Unpack
@@ -61,7 +61,7 @@ var bufferpack = require('../..'),
     bufferpack.unpack(complexFormat, complexPacked);
 })
 .on('cycle', cycleCallback)
-.on('complete', completeCallback)
+//.on('complete', completeCallback)
 .run();
 
 

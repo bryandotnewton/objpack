@@ -1,0 +1,9 @@
+$ npm run-script bench
+
+> bufferpack@0.0.5 bench d:\repos\bufferpack
+> node test/perf/suite.js
+
+simple pack x 479,129 ops/sec ±0.23% (100 runs sampled)
+simple unpack x 607,427 ops/sec ±0.22% (101 runs sampled)
+complex pack x 64,234 ops/sec ±0.31% (98 runs sampled)
+complex unpack x 87,535 ops/sec ±0.19% (95 runs sampled)
