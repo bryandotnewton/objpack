@@ -110,9 +110,9 @@ Notes:
   precision, so the "d" code performs no rounding.  128-bit floating point will
   cause the "d" code to simply truncate significands to 52 bits.
 
-  (6) Same handling as (2), but with varible length. Length of c strings is
+  (6) Same handling as (2), but with varible length. Length of C strings is
   variable, C strings are length + 1 (null byte).
-  
+
 
 A format character may be preceded by an integral repeat count.  For example,
 the format string "4h" means exactly the same thing as "hhhh".
@@ -137,9 +137,9 @@ single, empty string (while "0c" means 0 characters). If variable length strings
 required use the "S" format character, values decoded/encoded this way must be null
 terminated.
 
-A name/key can be assigned to each format character using "(name)". For unpack to 
+A name/key can be assigned to each format character using "(name)". For unpack to
 use names each format character in the format string must be assigned a name.
-Example: "S(firstName)S(lastName)B(age)". This would result in unpack returning 
+Example: "S(firstName)S(lastName)B(age)". This would result in unpack returning
 {"firstName": "Ryan", "lastName": "Olds", "age": 28}
 
 By default, C numbers are represented in network (or big-endian) byte order.
