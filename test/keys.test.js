@@ -14,17 +14,12 @@ describe('Keying', function() {
     var unpacked = bufferpack.unpack(format, packed, 0);
 
     it('should return an object', function() {
-      unpacked.should.be.a('object');
-      unpacked.should.have.property('first');
-      unpacked.first.should.equal(1);
-      unpacked.should.have.property('second');
-      unpacked.second.should.equal(2);
-      unpacked.should.have.property('third');
-      unpacked.third.should.equal(3);
-      unpacked.should.have.property('other');
-      unpacked.other.should.equal('atest');
-      unpacked.should.have.property('something');
-      unpacked.something.should.equal('somethingelse');
+      unpacked.should.be.type('object');
+      unpacked.should.have.property('first', 1);
+      unpacked.should.have.property('second', 2);
+      unpacked.should.have.property('third', 3);
+      unpacked.should.have.property('other', 'atest');
+      unpacked.should.have.property('something', 'somethingelse');
     });
 
     it('should returned object should have 5 properties', function() {
