@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git://github.com/ryanrolds/bufferpack.git"
   },
-  "main": "./bufferpack.js",
+  "main": "./lib/bufferpack.js",
   "author": "Ryan Olds <ryanrolds@gmail.com>",
   "maintainers": [
     {
@@ -31,6 +31,6 @@
     "should": "^3.3.1"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha test/*.test.js --reporter spec"
+    "test": "./node_modules/.bin/mocha test/keys.test.js --reporter spec"
   }
 }
