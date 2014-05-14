@@ -54,8 +54,7 @@
     "config": {
         "blanket": {
             "pattern": [
-                "marshal/lib/",
-                "marshal/server/"
+                "objpack/lib/"
             ]
         }
     }
