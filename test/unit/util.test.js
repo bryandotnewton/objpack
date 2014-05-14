@@ -29,5 +29,9 @@ describe('Utils', function () {
         it('should parse complex mixed values correctly', function() {
             expect(util.tokenize(data.complexMixed.format)).to.eql(data.complexMixed.parsed);
         });
+
+        it('should parse whitespace values correctly', function() {
+            expect(util.tokenize(data.whitespace.format)).to.eql(data.whitespace.parsed);
+        });
     });
 });

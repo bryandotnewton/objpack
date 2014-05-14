@@ -1,4 +1,28 @@
 module.exports = {
+    whitespace: {
+        format: '>b b10A S(named)',
+        parsed: {
+            fields: [{
+                name: 0,
+                type: 'b',
+                len: 1
+            }, {
+                name: 1,
+                type: 'b',
+                len: 1
+            }, {
+                name: 2,
+                type: 'A',
+                len: 10
+            }, {
+                name: 'named',
+                type: 'S',
+                len: 1
+            }],
+            endian: 'big'
+        },
+        data: [1, 2, [1,2,3,4,5,6,7,8,9,10], 'null_term_string']
+    },
     simple: {
         format: '<bbB',
         parsed: {
