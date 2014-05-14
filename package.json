@@ -1,39 +1,62 @@
 {
-  "name": "bufferpack",
-  "description": "Module to pack/unpack primitives and c strings into/out of a Node.js buffer",
-  "version": "0.0.5",
-  "keywords": ["jspack", "buffer", "octet", "primitive", "string"],
-  "homepage": "https://github.com/ryanrolds/bufferpack",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/ryanrolds/bufferpack.git"
-  },
-  "main": "./lib/bufferpack.js",
-  "author": "Ryan Olds <ryanrolds@gmail.com>",
-  "maintainers": [
-    {
-      "name": "Peter Griess",
-      "web": "https://github.com/pgriess"
+    "name": "objpack",
+    "description": "Module to pack/unpack Javascript objects into/out of a Node.js buffer",
+    "version": "0.0.1",
+
+    "keywords": [
+        "jspack", "objpack", "buffer", "octet",
+        "primitive", "string", "struct",
+        "pack", "objpack"
+    ],
+
+    "homepage": "https://github.com/englercj/objpack",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/englercj/objpack.git"
     },
-    {
-      "name": "Peter Magnusson",
-      "email": "peter@birchroad.net",
-      "web": "http://github.com/birchroad/node-jspack"
+
+    "author": "Chad Engler <englercj@live.com>",
+    "contributors": [
+        {
+            "name": "Peter Griess",
+            "web": "https://github.com/pgriess"
+        },
+        {
+            "name": "Peter Magnusson",
+            "email": "peter@birchroad.net",
+            "web": "http://github.com/birchroad/node-jspack"
+        },
+        {
+            "name": "Ryan Olds",
+            "email": "ryanrolds@gmail.com",
+            "web": "https://github.com/ryanrolds"
+        }
+    ],
+
+    "main": "./lib/index.js",
+
+    "devDependencies": {
+        "grunt": "^0.4.4",
+        "grunt-contrib-jshint": "^0.10.0",
+        "grunt-mocha-cov": "^0.2.1",
+
+        "mocha-term-cov-reporter": "^0.2.0",
+
+        "chai": "^1.9.1",
+        "benchmark": "^1.0.0",
+        "microtime": "^0.5.1"
     },
-    {
-      "name": "Ryan Olds",
-      "email": "ryanrolds@gmail.com",
-      "web": "https://github.com/ryanrolds"
+
+    "engines": {
+        "node": "~0.10.20"
+    },
+
+    "config": {
+        "blanket": {
+            "pattern": [
+                "marshal/lib/",
+                "marshal/server/"
+            ]
+        }
     }
-  ],
-  "devDependencies": {
-    "mocha": "^1.18.2",
-    "should": "^3.3.1",
-    "benchmark": "^1.0.0",
-    "microtime": "^0.5.1"
-  },
-  "scripts": {
-    "test": "mocha test/unit/keys.test.js --reporter spec",
-    "bench": "node test/perf/suite.js"
-  }
 }
