@@ -1,5 +1,3 @@
-require('should');
-
 var nut = require('util'),
     util = require('../../lib/util'),
     data = require('../fixtures/data');

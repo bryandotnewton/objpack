@@ -1,5 +1,3 @@
-require('should');
-
 var bufferpack = require('../..');
 
 describe('Keyed Format', function() {
@@ -28,7 +26,7 @@ describe('Keyed Format', function() {
         var unpacked = bufferpack.unpack(format, packed);
 
         it('should return an object with the correct values', function() {
-            unpacked.should.eql(values);
+            expect(unpacked).to.eql(values);
         });
     });
 });
