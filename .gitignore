@@ -1,3 +1,21 @@
+# sublime text 2 files
+*.sublime-*
+*.*~*.TMP
 
-node_modules/
+# temp files
+.DS_Store
+Thumbs.db
+Desktop.ini
+npm-debug.log
+
+# vim swap files
+*.sw*
+
+# emacs temp files
 *~
+\#*#
+
+# project ignores
+node_modules/
+!.gitkeep
+*__temp
