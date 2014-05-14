@@ -1,5 +1,7 @@
-objpack - Module to pack/unpack Javascript objects into/out of a Node.js buffer
+objpack
 ====================================================
+Module to pack/unpack Javascript objects into/out of a Node.js buffer
+
 ## Disclaimer
 
 This is built from `bufferpack` which was originally based on `jspack`.
