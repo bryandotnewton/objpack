@@ -36,6 +36,7 @@ module.exports = {
                 len: 1
             }, {
                 name: 3,
+                len: 1,
                 fields: [{
                     name: 0,
                     type: 'b',
@@ -51,6 +52,7 @@ module.exports = {
                 len: 1
             }, {
                 name: 6,
+                len: 1,
                 fields: [{
                     name: 0,
                     type: 'i',
@@ -65,6 +67,7 @@ module.exports = {
                     len: 1
                 }, {
                     name: 3,
+                    len: 1,
                     fields: [{
                         name: 0,
                         type: 'b',
@@ -117,6 +120,7 @@ module.exports = {
                 len: 1
             }, {
                 name: 'obj',
+                len: 1,
                 fields: [{
                     name: 'one',
                     type: 'b',
@@ -132,6 +136,7 @@ module.exports = {
                 len: 1
             }, {
                 name: 'deep',
+                len: 1,
                 fields: [{
                     name: 'num',
                     type: 'i',
@@ -146,6 +151,7 @@ module.exports = {
                     len: 1
                 }, {
                     name: 'deeper',
+                    len: 1,
                     fields: [{
                         name: 'bytes',
                         type: 'b',
@@ -215,6 +221,7 @@ module.exports = {
                 len: 1
             }, {
                 name: 'obj',
+                len: 1,
                 fields: [{
                     name: 0,
                     type: 'b',
@@ -230,6 +237,7 @@ module.exports = {
                 len: 1
             }, {
                 name: 'deep',
+                len: 1,
                 fields: [{
                     name: 0,
                     type: 'i',
@@ -244,6 +252,7 @@ module.exports = {
                     len: 1
                 }, {
                     name: 3,
+                    len: 1,
                     fields: [{
                         name: 0,
                         type: 'b',
