@@ -1,7 +1,7 @@
 {
     "name": "objpack",
     "description": "Module to pack/unpack Javascript objects into/out of a Node.js buffer",
-    "version": "0.0.1",
+    "version": "0.0.2",
 
     "keywords": [
         "jspack", "objpack", "buffer", "octet",
